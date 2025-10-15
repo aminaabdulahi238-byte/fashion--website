@@ -1,0 +1,151 @@
+<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dukaanka Haweenka — Dharka, Kabaha & Agabka</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Libaaxa Fashion</h1>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#categories">Categories</a>
+        <a href="#contact">La Xiriir</a>
+      </nav>
+
+      <div class="actions">
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+        <a class="cart" href="#cart">🛒</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h2>Dharka & Kabaha Dumarka — Tayada & Style</h2>
+        <p>Ka hel dhar casri ah, kabaha raaxada leh iyo agabkii ugu dambeeyay hal meel.</p>
+        <a class="btn" href="#shop">Dukaamo Hadda</a>
+      </div>
+      <div class="hero-image">
+        <!-- beddel sawirka hoos ku xusan -->
+        <img src="./image.png" alt="Fashion hero">
+      </div>
+    </div>
+  </section>
+
+  <section id="categories" class="categories container">
+    <h3>Qaybaha</h3>
+    <div class="cats">
+      <div class="cat">Dhar</div>
+      <div class="cat">Kabaha</div>
+      <div class="cat">Boorsooyin</div>
+      <div class="cat">Alaabooyin</div>
+    </div>
+  </section>
+
+  <section id="shop" class="shop container">
+    <h3>Warbixin / Alaabooyin</h3>
+
+    <div class="filters">
+      <div>Filter: <strong>Dharka</strong></div>
+      <div class="sort">Sort:
+        <select aria-label="sort">
+          <option>Qiimo: Hoose ilaa Sare</option>
+          <option>Qiimo: Sare ilaa Hoose</option>
+          <option>New Arrival</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="grid">
+      <!-- Product card 1 -->
+      <article class="card">
+        <img src="./image.png" alt="Product 1">
+        <div class="card-body">
+          <h4>Gown Casri ah</h4>
+          <p class="price">USD 12</p>
+          <p class="desc">Buud qurux bada.</p>
+          <div class="card-actions">
+            <a class="small" href="#">Akhri</a>
+            <button class="buy">Add to cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product card 2 -->
+      <article class="card">
+        <img src="./image.png" alt="Product 2">
+        <div class="card-body">
+          <h4>Kabo Heels</h4>
+          <p class="price">USD 10</p>
+          <p class="desc">Kabo raaxo iyo style leh, lugaha oo sarreeya.</p>
+          <div class="card-actions">
+            <a class="small" href="#">Akhri</a>
+            <button class="buy">Add to cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product card 3 -->
+      <article class="card">
+        <img src="./image.png" alt="Product 3">
+        <div class="card-body">
+          <h4>Boorso Leather</h4>
+          <p class="price">USD 15</p>
+          <p class="desc">Boorso tayadeedu wanaagsan tahay oo noo walba leh.</p>
+          <div class="card-actions">
+            <a class="small" href="#">Akhri</a>
+            <button class="buy">Add to cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product card 4 -->
+      <article class="card">
+        <img src="./image.png" alt="Product 4">
+        <div class="card-body">
+          <h4>Shirt Casual</h4>
+          <p class="price">USD 22</p>
+          <p class="desc">Cabayado tayo sare leh.</p>
+          <div class="card-actions">
+            <a class="small" href="#">Akhri</a>
+            <button class="buy">Add to cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Ku dar cards intaad rabto -->
+    </div>
+  </section>
+
+  <section id="contact" class="contact container">
+    <h3>La Xiriir</h3>
+    <p>Su'aalo, dalabyo gaar ah ama iskaashiga? Nala soo xidhiidh:</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Magacaaga" required>
+      <input type="email" placeholder="Email-ka" required>
+      <textarea placeholder="Fariintaada" rows="4"></textarea>
+      <button class="btn" type="submit">Dir Fariin</button>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Libaaxa Fashion — Dharka, Kabaha & Agabka. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle (fudud)
+    const menuBtn = document.getElementById('menuBtn');
+    const mainNav = document.getElementById('mainNav');
+    menuBtn.addEventListener('click', () => {
+      mainNav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
